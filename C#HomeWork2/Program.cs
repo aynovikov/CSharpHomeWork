@@ -9,18 +9,14 @@ Console.WriteLine ("Second digit of this number is " +stringNumber[1]);
 // Задача 13: Напишите программу, которая выводит третью цифру заданного 
 // числа или сообщает, что третьей цифры нет.
 
-Console.WriteLine ("Input number");
-int a = Convert.ToInt32(Console.Readline() ?? "");
-
-if ((a<=100) && (a<= 999))
+Console.WriteLine ("Input a number");
+int anyNumber = Convert.ToInt32(Console.Readline() ??"");
+string anyNumber = Convert.ToInt32(Console.Readline());
+if (anyNumber.Lenght > 2)
 {
-    Console.Writeline($"Third digit is ( a % 10");
+    Console.WriteLine("Third digit is" + AnyNumber[2]);
 }
-else if (a<100)
+else
 {
-    Console.WriteLine("There is no third digit")
-}
-else if (a > 999)
-{
-    Console.WriteLine("It is not a three digit number")
+    Console.WriteLine(" There is no thirg digit");
 }
