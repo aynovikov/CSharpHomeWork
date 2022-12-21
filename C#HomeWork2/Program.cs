@@ -1,4 +1,4 @@
-﻿/*Задача №10 Напишите программу, которая принимает на вход трёхзначное 
+﻿//Задача №10 Напишите программу, которая принимает на вход трёхзначное 
 //число и на выходе показывает вторую цифру этого числа.
 
 Console.WriteLine("Input three-digit number");
@@ -68,4 +68,3 @@ void numberWeek1(int NumWeek)
 }
 int number = NumberWeek("Enter number of the Weekday");
 numberWeek1(number);
-*\
