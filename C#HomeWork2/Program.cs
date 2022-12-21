@@ -35,7 +35,7 @@ else if (a > 999)
 // 7 -> да
 // 1 -> нет
  
- */
+ 
 
 int NumberWeek(string message)
 { 
@@ -68,3 +68,4 @@ void numberWeek1(int NumWeek)
 }
 int number = NumberWeek("Enter number of the Weekday");
 numberWeek1(number);
+*\
