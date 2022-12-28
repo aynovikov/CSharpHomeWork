@@ -48,44 +48,28 @@ namespace PalindromeChecker
 
 //A (7,-5, 0); B (1,-1,9) -> 11.53
 
-using System;
+Console.WriteLine("\n Task #21");
 
-namespace DistanceCalculator
-{
-class Program
-{
-static void Main(string[] args)
-{
-// Define the coordinates of the two points
-Point A = new Point(3, 6, 8);
-Point B = new Point(2, 1, -7);
-        // Calculate the distance between the two points
-        double distance = CalculateDistance(A, B);
-        Console.WriteLine("The distance between A and B is " + distance);
-    }
+int x1 = Coordinate("x", "A");
+int y1 = Coordinate("y", "A");
+int z1 = Coordinate("z", "A");
+int x2 = Coordinate("x", "B");
+int y2 = Coordinate("y", "B");
+int z2 = Coordinate("z", "B");
 
-    static double CalculateDistance(Point a, Point b)
-    {
-        // Calculate the distance using the distance formula
-        double dx = a.X - b.X;
-        double dy = a.Y - b.Y;
-        double dz = a.Z - b.Z;
-        return Math.Sqrt(dx * dx + dy * dy + dz * dz);
-    }
+int Coordinate(string coorName, string pointName)
+{
+    Console.Write($"Input coordinate {coorName} point {pointName}: ");
+    return Convert.ToInt16(Console.ReadLine());
 }
 
-// Define a Point class to represent the coordinates of a point in 3D space
-class Point
+double DistXYZ(double x1, double x2,
+               double y1, double y2,
+               double z1, double z2)
 {
-    public double X { get; set; }
-    public double Y { get; set; }
-    public double Z { get; set; }
+    return Math.Sqrt(Math.Pow((x2-x1), 2) + Math.Pow((y2-y1), 2) + Math.Pow((z2-z1), 2));
+}
 
-    public Point(double x, double y, double z)
-    {
-        X = x;
-        Y = y;
-        Z = z;
-    }
-}
-}
+
+double distXYZ = Math.Round(DistXYZ(x1, x2, y1, y2, z1, z2), 2);
+Console.WriteLine($"Distance between point : {distXYZ}");
