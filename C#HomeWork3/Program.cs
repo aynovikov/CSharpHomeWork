@@ -41,8 +41,8 @@ namespace PalindromeChecker
     }
 }
 
-*/
-//Напишите программу на С#, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+// Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
 //A (3,6,8); B (2,1,-7), -> 15.84
 
@@ -73,3 +73,28 @@ double DistXYZ(double x1, double x2,
 
 double distXYZ = Math.Round(DistXYZ(x1, x2, y1, y2, z1, z2), 2);
 Console.WriteLine($"Distance between point : {distXYZ}");
+*/
+//Задача 23
+
+//Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+//3 -> 1, 8, 27
+//5 -> 1, 8, 27, 64, 125
+using System;
+
+namespace ConsoleApp1
+{
+class Program
+{
+static void Main(string[] args)
+{
+Console.WriteLine("Введите число N:");
+int n = int.Parse(Console.ReadLine());  // Читаем число N с клавиатуры
+        // В цикле выводим кубы чисел от 1 до N
+        for (int i = 1; i <= n; i++)
+        {
+            Console.WriteLine(i * i * i);
+        }
+    }
+}
+}
