@@ -88,7 +88,7 @@ class Program
 {
 static void Main(string[] args)
 {
-Console.WriteLine("Введите число N:");
+Console.WriteLine(" Please enter number N:");
 int n = int.Parse(Console.ReadLine());  // Читаем число N с клавиатуры
         // В цикле выводим кубы чисел от 1 до N
         for (int i = 1; i <= n; i++)
