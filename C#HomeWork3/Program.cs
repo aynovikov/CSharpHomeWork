@@ -6,36 +6,35 @@
 
 //23432 -> да
 
-using System;
-
-namespace PalindromeChecker
+int GetNumber(string message)
+//body function
 {
-class Program
-{
-static void Main(string[] args)
-{
-Console.WriteLine("Enter a five-digit number:");
-int num = Convert.ToInt32(Console.ReadLine());
-        bool isPalindrome = IsPalindrome(num);
-        if (isPalindrome)
+    //bool isCorrect = false; // bool - принимает булиевая переменная true false. 
+    while (true)
+    {
+        Console.WriteLine(message);
+        string number = Console.ReadLine() ?? "";
+        if (int.TryParse(number, out int result) && 9999 < result && result < 100000)
+        //if (number.Length == 5 && int.TryParse(number, out int result) && result > 0)
         {
-            Console.WriteLine("The number is a palindrome.");
+            return result; //break; //isCorrect = true;
         }
         else
         {
-            Console.WriteLine("The number is not a palindrome.");
+            Console.WriteLine("Wrong input. Please input correct number");
         }
     }
 
-    static bool IsPalindrome(int num)
-    {
-        // Convert the number to a string and check if it is the same forwards and backwards
-        return num.ToString() == ReverseString(num.ToString());
-    }
+}
 
-    static string ReverseString(string s)
-    {
-        char[] arr = s.ToCharArray();
-        Array.Reverse(arr);
-        return new string(arr);
-    }
+bool IsPalindrom(string number)
+{
+    return (number[0] == number[4] && number[1] == number[3]);
+}
+
+int number = GetNumber("Input your fives-number value");
+if (IsPalindrom(number.ToString()))
+{
+    Console.WriteLine($"Your number: {number} - palindrom.");
+}
+else Console.WriteLine($"Your number: {number} - not palindrom.");
