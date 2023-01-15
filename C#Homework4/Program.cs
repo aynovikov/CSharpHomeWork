@@ -4,7 +4,7 @@
 
 // 2, 4 -> 16
 
-int A, B;
+/*int A, B;
 int result = 1;
 
 Console.WriteLine ("Enter base number: ");
@@ -18,3 +18,25 @@ for (int i = 0; i < B; i++)
 }
 
 Console.WriteLine("Result: " +result);
+
+Task 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+452 -> 11
+
+82 -> 10
+
+9012 -> 12
+*/
+int num;
+int sum =0;
+
+Console.WriteLine ("Enter a number: ");
+num = int.Parse( Console.ReadLine());
+
+while (num > 0)
+{
+    sum += num % 10;
+    num /= 10;
+}
+
+Console.WriteLine ("Sum of digits: " + sum);
