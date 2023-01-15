@@ -26,7 +26,7 @@ Task 27: Напишите программу, которая принимает 
 82 -> 10
 
 9012 -> 12
-*/
+
 int num;
 int sum = 0;
 
@@ -40,3 +40,25 @@ while (num > 0)
 }
 
 Console.WriteLine ("Sum of digits: " + sum);
+
+//Task 29 Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+
+//1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+
+//6, 1, 33 -> [6, 1, 33]
+*/
+
+int[] arr;
+int m;
+
+Console.WriteLine("Enter the number of elements in the array: ");
+m = int.Parse(Console.ReadLine());
+arr = new int[m];
+
+for (int i = 0; i < m; i++)
+{
+    Console.WriteLine("Enter element " + (i + 1) + ": ");
+    arr[i] = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("The array is: [{0}]", string.Join(", ", arr));
