@@ -1,0 +1,15 @@
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\bin\Debug\net6.0\C#Homework4.exe
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\bin\Debug\net6.0\C#Homework4.deps.json
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\bin\Debug\net6.0\C#Homework4.runtimeconfig.json
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\bin\Debug\net6.0\C#Homework4.dll
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\bin\Debug\net6.0\C#Homework4.pdb
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\C#Homework4.csproj.AssemblyReference.cache
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\C#Homework4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\C#Homework4.AssemblyInfoInputs.cache
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\C#Homework4.AssemblyInfo.cs
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\C#Homework4.csproj.CoreCompileInputs.cache
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\C#Homework4.dll
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\refint\C#Homework4.dll
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\C#Homework4.pdb
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\C#Homework4.genruntimeconfig.cache
+C:\Users\anovikov\Desktop\HomeWork\C#Homework4\obj\Debug\net6.0\ref\C#Homework4.dll
