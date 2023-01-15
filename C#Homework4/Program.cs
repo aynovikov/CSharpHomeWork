@@ -31,7 +31,7 @@ int num;
 int sum = 0;
 
 Console.WriteLine ("Enter a number: ");
-num = int.Parse( Console.ReadLine());
+num = int.Parse(Console.ReadLine());
 
 while (num > 0)
 {
