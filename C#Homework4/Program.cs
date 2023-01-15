@@ -28,7 +28,7 @@ Task 27: Напишите программу, которая принимает 
 9012 -> 12
 */
 int num;
-int sum =0;
+int sum = 0;
 
 Console.WriteLine ("Enter a number: ");
 num = int.Parse( Console.ReadLine());
