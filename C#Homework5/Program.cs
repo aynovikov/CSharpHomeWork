@@ -22,12 +22,12 @@ class Program
     }
 }
 
-//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+//Task 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 
 //[3, 7, 23, 12] -> 19
 
 //[-4, -6, 89, 6] -> 0
-*/
+
 using System;
 using System.Linq;
 
@@ -50,6 +50,25 @@ class Program
             }
         }
         Console.WriteLine(sum);
+
     }
 }
+//Task 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
+//[3 7 22 2 78] -> 76
+*/
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        double[] nums = { 3.0, 7.0, 22.0, 2.0, 78.0 };
+        Console.WriteLine(string.Join(",", nums));
+
+        double max = nums.Max();
+        double min = nums.Min();
+        double diff = max - min;
+        Console.WriteLine(diff);
+    }
+}
