@@ -60,7 +60,7 @@ class Program
 using System;
 class Program
 {
-    static void Main(string[] args)
+    static void Program.Main(string[] args)
     {
         double[] nums = { 3.0, 7.0, 22.0, 2.0, 78.0 };
         Console.WriteLine(string.Join(",", nums));
