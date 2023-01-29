@@ -58,36 +58,34 @@ class Program
 Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 */
 using System;
-using System.Linq;
-
-class Program
+class MainClass 
 {
-    static void Main(string[] args)
+  public static void Main (string[] args) 
+  {
+    int[,] arr = { {1, 4, 7, 2},
+                  {5, 9, 2, 3},
+                  {8, 4, 2, 4},
+                  {5, 2, 6, 7} };
+
+    int minRow = 0;
+    int minSum = int.MaxValue;
+
+    for (int i = 0; i < arr.GetLength(0); i++) 
     {
-        int[,] arr = new int[,] { { 1, 4, 7, 2 }, { 5, 9, 2, 3 }, { 8, 4, 2, 4 } };
+      int sum = 0;
+      for (int j = 0; j < arr.GetLength(1); j++) 
+      {
+        sum += arr[i, j];
+      }
 
-        for (int i = 0; i < arr.GetLength(0); i++)
-        {
-            int[] row = new int[arr.GetLength(1)];
-            for (int j = 0; j < arr.GetLength(1); j++)
-            {
-                row[j] = arr[i, j];
-            }
-            Array.Sort(row);
-            Array.Reverse(row);
-            for (int j = 0; j < arr.GetLength(1); j++)
-            {
-                arr[i, j] = row[j];
-            }
-        }
-
-        for (int i = 0; i < arr.GetLength(0); i++)
-        {
-            for (int j = 0; j < arr.GetLength(1); j++)
-            {
-                Console.Write(arr[i, j] + " ");
-            }
-            Console.WriteLine();
-        }
+      if (sum < minSum) 
+      {
+        minSum = sum;
+        minRow = i;
+      }
     }
+
+    Console.WriteLine("The row with the smallest sum is row " + minRow + " with a sum of " + minSum);
+  }
 }
+
