@@ -98,7 +98,7 @@ class MainClass
 //Результирующая матрица будет:
 //18 20
 //15 18
-*/
+
 int[,] matrix1 = new int[,] { { 2, 4 }, { 3, 2 } };
 int[,] matrix2 = new int[,] { { 3, 4 }, { 3, 3 } };
 
@@ -136,4 +136,29 @@ for (int i = 0; i < rows1; i++)
         Console.Write(resultMatrix[i, j] + " ");
     }
     Console.WriteLine();
+}
+*/
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    int[,] matrix1 = {{2, 4}, {3, 2}};
+    int[,] matrix2 = {{3, 4}, {3, 3}};
+    int[,] resultMatrix = new int[matrix1.GetLength(0),matrix2.GetLength(1)];
+
+    for (int i = 0; i < matrix1.GetLength(0); i++) {
+      for (int j = 0; j < matrix2.GetLength(1); j++) {
+        for (int k = 0; k < matrix1.GetLength(1); k++) {
+          resultMatrix[i,j] += matrix1[i,k] * matrix2[k,j];
+        }
+      }
+    }
+
+    for (int i = 0; i < resultMatrix.GetLength(0); i++) {
+      for (int j = 0; j < resultMatrix.GetLength(1); j++) {
+        Console.Write(resultMatrix[i,j] + " ");
+      }
+      Console.WriteLine();
+    }
+  }
 }
